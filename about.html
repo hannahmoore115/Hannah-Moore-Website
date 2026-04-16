@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>About Hannah Moore</title>
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+	<header>
+
+		<!-- This is the MOBILE nav-->
+		<div class="mobilenav"> 
+
+		  <h1>Masthead of site</h1>
+
+		  <input class="menu-btn" type="checkbox" id="menu-btn" />
+		  <label class="menu-icon" for="menu-btn">
+		    <span class="navicon" />
+		  </label>
+		  
+		  <nav class='menu'>
+		    <a class='nav-item' href="index.html">Home</a>
+		    <a class='nav-item' href="about.html">About</a>
+		    <a class='nav-item' href="contact.html">Contact</a>
+		  </nav> 
+
+		</div>
+
+		<!-- This is the DESKTOP nav -->
+
+		<div class="masthead">
+			<h1>Hannah Moore</h1>
+		</div>
+
+		<div class="navbar">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+
+	
+	<main>
+		<!-- NEW DIV HERE -->
+		<div class="abouttop">
+			<h2 id="headline">A bit more about me!</h2>
+			
+			<p class="bodytext">Related to the MU campus, I really enjoy sports, working, and meeting new people. I am currently working for the Mizzou Football team in the department of recruiting operations as a student intern. I am also the secretary of Mizzou's Women In Sports Association. I enjoy working in football, watching other Mizzou sports, and helping young women who aspire to work in the industry.</p>
+			
+			<p class="bodytext">Outside of my academic focus, I am happiest when surrounded by my family and friends. Being from the St. Louis area, I am not too far from home and try to enjoy a weekend every now and then with the family! I love to travel and visit friends when I have the time. I have many many stops in Lawrence, KS (sorry Mizzou people) to see my childhood best friend. I also frequently visit Boulder, Colorado where my friends and I hike, find new places to try coffee or matcha, and spend lots of time in the sun. My friends and family are my biggest support group and they mean the world to me.</p>
+			
+			<p class="bodytext">As a senior with graduation upon the horizon, I often think about my future and where I will be in one year from now. I have always dreamed of having an untraditional job a "Non-Nine-to-Five" if you will. I would love to continue working in sports and carry out my love for helping build community. I am an open book when it comes to my location. I find it interesting and fun to learn the culture of new cities and am excited to learn and grow. </p>
+
+		</div>
+
+ 		<script>
+ 			let headline = document.getElementById("headline");
+ 			console.log(headline); 
+
+
+ 			let paragraphs = document.getElementsByClassName("bodytext")
+ 			console.log(paragraphs);
+ 		</script>
+		
+
+	</main>
+
+
+	<footer>
+		
+	</footer>
+	
+</body>
+
+</html>

@@ -1,0 +1,304 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+*{  
+	margin:0px;
+	padding:0px;
+}
+
+
+main{
+	color: navy;
+  background-color: lightblue;
+	margin: 5px 5%;
+}
+
+p {
+	color: navy;
+}
+
+h2 {
+	font-size: 1.7rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+}
+
+div{
+	border-style:none;
+}
+
+.masthead{
+	background-color:lightskyblue;
+  color: navy;
+	width:100%;
+	height:150px;
+	/*padding-top:32px;
+	padding-right:32px;
+	padding-bottom:32px;
+	padding-left:32px;
+	clockwise starting from the top*/
+	padding:32px;
+	border:2px solid navy;
+	margin:0px;
+	display: flex;
+	justify-content: center;
+}
+
+.masthead h1{
+  font-family: "Oswald", sans-serif;;
+	font-size: 3rem;
+	
+}
+
+.navbar h1 {
+  font-family: "Oswald", sans-serif;;
+	font-size: 3rem;
+}
+
+.navbar ul {
+	list-style-type: none;
+	background-color: whitesmoke;
+	display: flex;
+	justify-content: center;
+}
+
+.navbar a {
+	color: Navy;
+	text-decoration: none;
+	padding: 0 35px;
+	font-size: 1.3rem;
+	
+}
+
+.navbar a:hover {
+	background-color: Navy;
+	color: whitesmoke;
+}
+
+/* Start of mobile nav! */
+
+.mobilenav {
+  display: flex;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+.mobilenav > * {
+/*   flex-grow: 1; */
+}
+
+.mobilenav h1 {
+  margin-left: 1rem;
+}
+
+.mobilenav a {
+  text-decoration: none;
+}
+
+/* "Hide" checkbox -- moves it off screen*/
+#menu-btn {
+  position: absolute;
+  bottom: -100%;
+  right: -100%;
+}
+
+/* Hide hamburger for bigger screens */
+.menu-icon {
+  visibility: hidden;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 250px;
+  margin-right: 2rem;
+}
+
+.mobilenav {
+	display: none;
+}
+
+/* END of MOBILE nav */
+
+
+.hplayout {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+
+
+@media (max-width: 1023px) {
+	main { 
+		background-color: lightblue;
+	 }
+
+	 #hideme {
+	 	display: none;
+	 }
+
+}
+ 
+
+ @media (max-width: 600px) {
+ 	.masthead {
+ 		display: none;
+ 	}
+ 	.navbar {
+ 		display: none;
+ 	}
+ 	.hplayout { 
+ 		flex-direction: column;
+ 	 }
+
+
+ }
+
+
+@media screen and (max-width: 600px) {
+  
+  .mobilenav {
+    display: grid;
+    grid-template-areas:
+       "title   title   hamburger"
+       "nav     nav     nav";
+  }
+  
+  .mobilenav h1 {
+    grid-area: title;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: navy;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-icon {
+    grid-area: hamburger;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    padding: 30px 20px 30px 0;
+    position: relative;
+    user-select: none;
+    visibility: visible;
+  }
+
+  .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+  }
+
+  .navicon:before {
+    top: 5px;
+  }
+
+  .navicon:after {
+    top: -5px;
+  }
+
+  .navicon:before, .navicon:after {
+    background: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    transition: all .2s ease-out;
+  }
+
+  .menu {
+    grid-area: nav;
+    max-width: unset;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu a {
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn:checked ~ .menu-icon .navicon:before,
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    top: 0;
+  }
+}
+
+
+
+
+/* Beginning of about page style */
+
+.abouttop {
+	padding: 30px;
+}
+
+.abouttop h2 {
+	margin-bottom: .8rem;
+	font-size: 1.8rem;
+}
+
+.abouttop p{
+	line-height: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+
+
+
+#headline {
+	background-color: lightblue;
+	color: Navy;
+}
+
+
+
+
+
+
+
+
+
+
